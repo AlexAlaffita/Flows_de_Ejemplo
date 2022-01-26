@@ -1,0 +1,66 @@
+[
+    {
+        "id": "cf1e28714428b7d1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b2c361a84ec03072",
+        "type": "inject",
+        "z": "cf1e28714428b7d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Topic de Ejemplo",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "492860de559dce4d"
+            ]
+        ]
+    },
+    {
+        "id": "492860de559dce4d",
+        "type": "debug",
+        "z": "cf1e28714428b7d1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "209c42f760526303",
+        "type": "comment",
+        "z": "cf1e28714428b7d1",
+        "name": "",
+        "info": "Aprendiendo Node-JS\nEste es mi programa tipo \"Hola Mundo\"\nHasta ahora se me hace interesante lo mostrado",
+        "x": 480,
+        "y": 140,
+        "wires": []
+    }
+]
